@@ -21,7 +21,7 @@ const createData = () => {
 <template>
   <div class="container add-item">
     <header>
-      <img src="/media/logo.png" alt="logo" />
+      <router-link to="/"><img src="/media/logo.png" alt="logo" /></router-link>
       <button @click="$router.back()" class="return-link">
         <i class="fas fa-arrow-left"></i> Return to List Page
       </button>

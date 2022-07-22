@@ -4,7 +4,7 @@ import SearchInput from "@/components/Index/SearchInput.vue";
 <template>
   <header class="header-result">
     <nav>
-      <img src="/media/logo.png" alt="logo" />
+      <router-link to="/"><img src="/media/logo.png" alt="logo" /></router-link>
       <SearchInput />
     </nav>
     <router-link to="/add" class="btn">Add new record</router-link>
