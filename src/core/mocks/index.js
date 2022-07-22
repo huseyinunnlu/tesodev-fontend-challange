@@ -1,2 +1,4 @@
-export { data } from "./data.json";
-export { news } from "./news.json";
+import * as data from "./data.json";
+import * as news from "./news.json";
+
+export { data, news };

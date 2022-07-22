@@ -13,12 +13,16 @@
     "@vee-validate/rules": "^4.5.10",
     "add": "^2.0.6",
     "axios": "^0.26.1",
+    "moment": "^2.29.4",
     "pinia": "^2.0.12",
     "sass-loader": "^12.6.0",
     "vee-validate": "^4.5.10",
     "vue": "^3.2.25",
     "vue-i18n": "9",
     "vue-router": "4",
+    "vue-yandex-maps": "^0.12.3",
+    "vue3-carousel": "^0.1.40",
+    "vue3-google-map": "^0.13.2",
     "yarn": "^1.22.18"
   },
   "devDependencies": {

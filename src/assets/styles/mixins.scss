@@ -1,0 +1,84 @@
+@mixin font-1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+@mixin font-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: $darkest;
+}
+
+@mixin font-2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $darkest;
+}
+
+@mixin font-3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $darkest;
+}
+
+@mixin font-4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $light;
+}
+
+@mixin font-result-item-dark {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: $darkest;
+}
+
+@mixin font-result-item-gray {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $result-item-gray;
+}
+
+@mixin font-5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  color: $dark-gray;
+}
+
+@mixin font-input {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin font-6 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $card-gray;
+}
+
+@mixin font-7 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}

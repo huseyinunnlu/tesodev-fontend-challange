@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Inter", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="text"] {
+  @include font-input;
+  color: $darkest;
+  border: 1.5px solid #484848;
+  border-radius: 8px;
+  padding: 10px 17px;
+  width: 100%;
+  transition: all 300ms;
+  &:hover {
+    background: rgba(100, 100, 100, 0.08);
+  }
+  &::placeholder {
+    @include font-input;
+    color: $placeholder-color;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

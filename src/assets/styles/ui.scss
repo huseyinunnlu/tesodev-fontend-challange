@@ -1,0 +1,10 @@
+.btn {
+  @include font-2;
+  color: #fff;
+  background: $button;
+  transition: background-color 0.3s;
+  border-radius: 12px;
+  &:hover {
+    background-color: $button-hover;
+  }
+}

@@ -1,34 +1,36 @@
-[
-    {
-        "image": null,
-        "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
-        "createdAt": "28/06/2022 10:09",
-        "author": {
-            "nameSurname": "Troy Corlson"
+{
+    "news": [
+        {
+            "image": null,
+            "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
+            "createdAt": "28/06/2022 10:09",
+            "author": {
+                "nameSurname": "Troy Corlson"
+            }
+        },
+        {
+            "image": null,
+            "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
+            "createdAt": "28/06/2022 10:09",
+            "author": {
+                "nameSurname": "Troy Corlson"
+            }
+        },
+        {
+            "image": null,
+            "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
+            "createdAt": "28/06/2022 10:09",
+            "author": {
+                "nameSurname": "Troy Corlson"
+            }
+        },
+        {
+            "image": null,
+            "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
+            "createdAt": "28/06/2022 10:09",
+            "author": {
+                "nameSurname": "Troy Corlson"
+            }
         }
-    },
-    {
-        "image": null,
-        "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
-        "createdAt": "28/06/2022 10:09",
-        "author": {
-            "nameSurname": "Troy Corlson"
-        }
-    },
-    {
-        "image": null,
-        "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
-        "createdAt": "28/06/2022 10:09",
-        "author": {
-            "nameSurname": "Troy Corlson"
-        }
-    },
-    {
-        "image": null,
-        "title": "A Plan to Rebuild the Bus Terminal Everyone Loves to Hate",
-        "createdAt": "28/06/2022 10:09",
-        "author": {
-            "nameSurname": "Troy Corlson"
-        }
-    }
-]
+    ]
+}
