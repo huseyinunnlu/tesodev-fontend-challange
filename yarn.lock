@@ -7,21 +7,6 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.17.7.tgz#fc19b645a5456c8d6fdb6cecd3c66c0173902800"
   integrity sha512-bm3AQf45vR4gKggRfvJdYJ0gFLoCbsPxiFLSH6hTVYABptNHY6l9NrhnucVjQ/X+SPtLANT9lc0fFhikj+VBRA==
 
-"@googlemaps/js-api-loader@^1.12.11":
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.14.3.tgz#d7a161cd547be04ad46a1cb176e6c2647f6d74a7"
-  integrity sha512-6iIb+qpGgQpgIHmIFO44WhE1rDUxPVHuezNFL30wRJnkvhwFm94tD291UvNg9L05hLDSoL16jd0lbqqmdy4C5g==
-  dependencies:
-    fast-deep-equal "^3.1.3"
-
-"@googlemaps/markerclusterer@^2.0.6":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@googlemaps/markerclusterer/-/markerclusterer-2.0.8.tgz#39f037e60a1c62cd9f04d529ea9c4f286af4ec6f"
-  integrity sha512-l/Z3nxTE55iaWDB8NL/HpFdYht2x0khPaJI9pD7KDbfHeZaZyG8yT6xi2cZ0Lb2VvgKFb3OtNKRMpAuS4xm2rg==
-  dependencies:
-    fast-deep-equal "^3.1.3"
-    supercluster "^7.1.3"
-
 "@intlify/core-base@9.1.9":
   version "9.1.9"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.1.9.tgz#e4e8c951010728e4af3a0d13d74cf3f9e7add7f6"
@@ -83,16 +68,6 @@
   resolved "https://registry.yarnpkg.com/@kyvg/vue3-notification/-/vue3-notification-2.3.4.tgz#7503647ae1d26a7c58bbf5182b505ca345c0882a"
   integrity sha512-20Km1L75gncIZCjosT1OKbJl9HhNiOd7LRXqVIqlehHHem9NgBjQhDFz6XGo1RcF0MyA4/BC7kV7tcq/PMT+tA==
 
-"@vee-validate/i18n@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@vee-validate/i18n/-/i18n-4.5.10.tgz#8214e6a92ce174504d51567f93fdbf6726ade204"
-  integrity sha512-ZDqhMMUgcyUGw1QDoZLULjkXdrL6Q5EMcfTHrR0TifnUsGKEBxzFxfHq8RdBrPrC1QbjdSc3tyLsWaNEjl3jhA==
-
-"@vee-validate/rules@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@vee-validate/rules/-/rules-4.5.10.tgz#c2d1ae539ef105622388f6061c11f9f395a99e17"
-  integrity sha512-8kFsXvCzP1JHuyzXyH7cIhLQOJnba6ySG5GzaKnWGIJnbT1itNJ6dACdedjW3bWWpYiOkxi76Nqj14UL0ukMFQ==
-
 "@vitejs/plugin-vue@^2.2.0":
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.2.4.tgz#ab8b199ca82496b05d2654c5f34ffcf9b947243d"
@@ -140,7 +115,7 @@
     "@vue/compiler-dom" "3.2.31"
     "@vue/shared" "3.2.31"
 
-"@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.0.0-beta.15", "@vue/devtools-api@^6.0.0-beta.7", "@vue/devtools-api@^6.1.0":
+"@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.0.0-beta.7", "@vue/devtools-api@^6.1.0":
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.1.3.tgz#a44c52e8fa6d22f84db3abdcdd0be5135b7dd7cf"
   integrity sha512-79InfO2xHv+WHIrH1bHXQUiQD/wMls9qBk6WVwGCbdwP7/3zINtvqPNMtmSHXsIKjvUAHc8L0ouOj6ZQQRmcXg==
@@ -212,13 +187,6 @@ anymatch@~3.1.2:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
-
-axios@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
-  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
-  dependencies:
-    follow-redirects "^1.14.8"
 
 binary-extensions@^2.0.0:
   version "2.2.0"
@@ -409,22 +377,12 @@ estree-walker@^2.0.2:
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
-fast-deep-equal@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
-  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
-
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
-
-follow-redirects@^1.14.8:
-  version "1.14.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
-  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
 
 fsevents@~2.3.2:
   version "2.3.2"
@@ -491,11 +449,6 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-kdbush@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-3.0.0.tgz#f8484794d47004cc2d85ed3a79353dbe0abc2bf0"
-  integrity sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew==
-
 klona@^2.0.4:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
@@ -512,11 +465,6 @@ magic-string@^0.25.7:
   integrity sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==
   dependencies:
     sourcemap-codec "^1.4.8"
-
-moment@^2.29.4:
-  version "2.29.4"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
-  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 nanoid@^3.3.1:
   version "3.3.1"
@@ -644,13 +592,6 @@ sourcemap-codec@^1.4.8:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-supercluster@^7.1.3:
-  version "7.1.5"
-  resolved "https://registry.yarnpkg.com/supercluster/-/supercluster-7.1.5.tgz#65a6ce4a037a972767740614c19051b64b8be5a3"
-  integrity sha512-EulshI3pGUM66o6ZdH3ReiFcvHpM3vAigyK+vcxdjpJyEbIIrtbmBdY23mGgnI24uXiGFvrGq9Gkum/8U7vJWg==
-  dependencies:
-    kdbush "^3.0.0"
-
 supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -669,13 +610,6 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
-
-vee-validate@^4.5.10:
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.5.10.tgz#425d4ca1e317361b86f7deb6600daec8942e9b90"
-  integrity sha512-7dZE0PZTNY3Ztp6Gz8iw+QS7Fz59vU1qkD0rBJkldkf9Faw2lFjWgE0tiCist5RQkLgt7/HaVbojzb/SCdutfA==
-  dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.15"
 
 vite@^2.8.0:
   version "2.8.6"
@@ -720,14 +654,6 @@ vue3-carousel@^0.1.40:
   version "0.1.40"
   resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.40.tgz#46f5a903703febddbf47ad155916a0a9c0f720f7"
   integrity sha512-rPIfBxFhsY6W6qKNGsjgzPJdngt07ov06/Ql1lKsTr8gBx73gUxCIIQo/7M3QCx3KU94CDGBbLugF5YGdEPefg==
-
-vue3-google-map@^0.13.2:
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/vue3-google-map/-/vue3-google-map-0.13.2.tgz#a6088659b912439c04b7b36dfbce98d2217eb1d5"
-  integrity sha512-ZhKHh7/pTIbyUI6qUdW0hOvZZyMERnk7I5IaKIxmbOIAAH8lz/kg2SzuQnmbkCOJevZBLPs5BoBZS5mUnSWEgg==
-  dependencies:
-    "@googlemaps/js-api-loader" "^1.12.11"
-    "@googlemaps/markerclusterer" "^2.0.6"
 
 vue@^3.2.25:
   version "3.2.31"

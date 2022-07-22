@@ -1,5 +1,4 @@
 <script setup>
-import { formatDate } from "@/core/helpers";
 const props = defineProps(["data"]);
 </script>
 <template>
