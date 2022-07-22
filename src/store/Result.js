@@ -3,6 +3,7 @@ import { data } from "@/core/mocks/index";
 export const useResultStore = defineStore("resultStore", {
   state: () => {
     return {
+      filteredData: [],
       data: data.data,
       pagination: false,
     };
@@ -23,10 +24,10 @@ export const useResultStore = defineStore("resultStore", {
           return this.sortData(a, b, query?.sort);
         });
 
-        this.data = this.getPage(data, query?.page);
+        this.filteredData = this.getPage(data, query?.page);
       } else {
         this.pagination = false;
-        this.data = [];
+        this.filteredData = [];
       }
     },
 

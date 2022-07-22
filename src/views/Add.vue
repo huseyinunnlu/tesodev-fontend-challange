@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from "@vue/reactivity";
+import { reactive, ref } from "@vue/reactivity";
 import { useResultStore } from "@/store/Result";
 import { useRouter } from "vue-router";
 import { checkValidation } from "@/core/validation";
@@ -32,10 +32,15 @@ const validationSchema = {
   },
 };
 
+const errors = reactive({
+  errors: [],
+  messages: [],
+});
+
 const createData = () => {
-  const status = checkValidation(form, validationSchema);
-  console.log(status);
-  if (status) {
+  [errors.errors, errors.messages] = checkValidation(form, validationSchema);
+
+  if (errors.errors.length < 1) {
     resultStore.addItem(form);
     router.push("/");
   }
@@ -55,19 +60,40 @@ const createData = () => {
         label="Name Surname"
         placeholder="Enter name and surname"
         name="namesurname"
+        :isValid="
+          errors.errors.indexOf('nameSurname') > -1 && errors.errors.length > 0
+        "
+        :errorMessage="errors?.messages?.nameSurname"
       />
       <Input
         v-model="form.country"
         label="Country"
         placeholder="Country"
         name="country"
+        :isValid="
+          errors.errors.indexOf('country') > -1 && errors.errors.length > 0
+        "
+        :errorMessage="errors?.messages?.country"
       />
-      <Input v-model="form.city" label="City" placeholder="City" name="city" />
+      <Input
+        v-model="form.city"
+        label="City"
+        placeholder="City"
+        name="city"
+        :isValid="
+          errors.errors.indexOf('city') > -1 && errors.errors.length > 0
+        "
+        :errorMessage="errors?.messages?.city"
+      />
       <Input
         v-model="form.email"
         label="Email"
         placeholder="Email"
         name="email"
+        :isValid="
+          errors.errors.indexOf('email') > -1 && errors.errors.length > 0
+        "
+        :errorMessage="errors?.messages?.email"
       />
       <button type="submit" class="btn add-btn">Add</button>
     </form>

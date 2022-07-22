@@ -9,6 +9,8 @@ const props = defineProps({
   label: { type: String, default: "" },
   rules: { type: String, default: "" },
   placeholder: { type: String, required: false },
+  errorMessage: { type: String, required: false },
+  isValid: { type: Boolean, default: true },
 });
 const data = ref(props.modelValue);
 
@@ -30,7 +32,7 @@ const updateInput = (event) => {
 </script>
 
 <template>
-  <div class="form-group">
+  <div class="form-group" :class="isValid && ' error'">
     <label class="form-label" :for="name">{{ label }}</label>
     <input
       type="text"
@@ -39,5 +41,8 @@ const updateInput = (event) => {
       @input="updateInput"
       :value="value"
     />
+    <div class="error-message">
+      {{ errorMessage }}
+    </div>
   </div>
 </template>

@@ -16,11 +16,11 @@ onMounted(() => {
   <div class="results-container">
     <div class="search-results">
       <ResultItem
-        v-for="(item, index) in resultStore.data"
+        v-for="(item, index) in resultStore.filteredData"
         :key="index"
         :data="item"
       />
-      <Pagination v-if="resultStore.data.length > 3" />
+      <Pagination v-if="resultStore.filteredData.length > 3" />
     </div>
     <Sort />
   </div>

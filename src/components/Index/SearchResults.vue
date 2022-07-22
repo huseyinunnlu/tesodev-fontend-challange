@@ -16,7 +16,7 @@ const dataStore = useDataStore();
       <router-link
         :to="{
           name: 'results',
-          query: { keyword: searchValue },
+          query: { keyword: searchValue, sort: 'nameSurname-asc' },
         }"
         >Show more...</router-link
       >

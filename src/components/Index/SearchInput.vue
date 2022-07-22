@@ -19,7 +19,11 @@ watch(keyword, (value) => {
         keyword?.length > 2 &&
           $router.push({
             name: 'results',
-            query: { ...route.query, keyword: keyword },
+            query: {
+              ...route.query,
+              keyword: keyword,
+              sort: 'nameSurname-asc',
+            },
           })
       "
       :disabled="keyword?.length < 3 && true"
