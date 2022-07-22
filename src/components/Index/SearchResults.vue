@@ -1,7 +1,8 @@
 <script setup>
 import ResultItem from "./ResultItem.vue";
+import { defineProps } from "vue";
 import { useDataStore } from "@/store/Data";
-
+const props = defineProps(["searchValue"]);
 const dataStore = useDataStore();
 </script>
 <template>
@@ -15,7 +16,7 @@ const dataStore = useDataStore();
       <router-link
         :to="{
           name: 'results',
-          query: { $route.query, keyword: keyword },
+          query: { keyword: searchValue },
         }"
         >Show more...</router-link
       >

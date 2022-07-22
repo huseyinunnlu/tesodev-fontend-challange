@@ -114,6 +114,8 @@
   .news {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
+
     .title {
       margin-bottom: 50px;
       @include font-title;

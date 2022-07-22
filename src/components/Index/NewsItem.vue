@@ -6,8 +6,6 @@ const props = defineProps(["data"]);
   <div class="card carousel__item">
     <img src="/media/news-banner.png" alt="news" />
     <span class="card-title">{{ props.data.title }}</span>
-    <span class="author"
-      >{{ formatDate("2002-06-10 10:09") }} * by Troy Corison</span
-    >
+    <span class="author">1h ago &#xb7; by Troy Corison</span>
   </div>
 </template>
