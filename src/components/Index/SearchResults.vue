@@ -12,7 +12,13 @@ const dataStore = useDataStore();
       :data="item"
     />
     <div class="search-actions">
-      <router-link to="/">Show more...</router-link>
+      <router-link
+        :to="{
+          name: 'results',
+          query: { $route.query, keyword: keyword },
+        }"
+        >Show more...</router-link
+      >
     </div>
   </div>
 </template>

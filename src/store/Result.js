@@ -3,13 +3,13 @@ import { data } from "@/core/mocks/index";
 export const useResultStore = defineStore("resultStore", {
   state: () => {
     return {
-      data: [],
+      data: data.data,
       pagination: false,
     };
   },
   actions: {
     filter(query) {
-      const jsonData = data.data;
+      const jsonData = this.data;
       if (query?.keyword) {
         const data = jsonData.filter((item) => {
           const nameSurname = item.nameSurname.toLowerCase();
@@ -69,8 +69,18 @@ export const useResultStore = defineStore("resultStore", {
     getPage(data, page = 1) {
       const lastIndex = parseInt(page) * 4 || 1;
       const firstIndex = lastIndex - 4;
-      console.log(firstIndex, lastIndex);
       return data.slice(firstIndex, lastIndex);
+    },
+
+    addItem(form) {
+      this.data.unshift({
+        nameSurname: form.nameSurname,
+        email: form.email,
+        country: form.country,
+        city: form.city,
+        company: null,
+        date: null,
+      });
     },
   },
 });

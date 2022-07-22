@@ -11,6 +11,11 @@ const routes = [
     name: "results",
     component: () => import("../views/Results.vue"),
   },
+  {
+    path: "/add",
+    name: "add-item",
+    component: () => import("../views/Add.vue"),
+  },
 ];
 
 export const router = createRouter({

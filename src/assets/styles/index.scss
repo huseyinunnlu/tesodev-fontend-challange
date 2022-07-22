@@ -365,3 +365,34 @@ footer {
     color: #fff;
   }
 }
+
+//add item
+
+.add-item {
+  display: flex;
+  flex-direction: column;
+  header {
+    margin: 27px 0 60px 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 60px;
+      margin-right: 30px;
+    }
+
+    .return-link {
+      @include font-return-text;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    .add-btn {
+      margin-left: auto;
+      padding: 13px 40px;
+    }
+  }
+}
