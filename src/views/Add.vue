@@ -2,7 +2,7 @@
 import { reactive } from "@vue/reactivity";
 import { useResultStore } from "@/store/Result";
 import { useRouter } from "vue-router";
-
+import { checkValidation } from "@/core/validation";
 const resultStore = useResultStore();
 const router = useRouter();
 
@@ -13,9 +13,32 @@ const form = reactive({
   email: null,
 });
 
+const validationSchema = {
+  nameSurname: {
+    label: "Name surname",
+    rules: "required|letters|min:4|max:60",
+  },
+  country: {
+    label: "Country",
+    rules: "required|letters|min:2|max:40",
+  },
+  city: {
+    label: "City",
+    rules: "required|letters|min:2|max:40",
+  },
+  email: {
+    label: "Email",
+    rules: "required|email",
+  },
+};
+
 const createData = () => {
-  resultStore.addItem(form);
-  router.push("/");
+  const status = checkValidation(form, validationSchema);
+  console.log(status);
+  if (status) {
+    resultStore.addItem(form);
+    router.push("/");
+  }
 };
 </script>
 <template>
