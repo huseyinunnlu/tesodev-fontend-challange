@@ -82,3 +82,11 @@
   line-height: 21px;
   color: #ffffff;
 }
+
+@mixin font-dropdown {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000;
+}

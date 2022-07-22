@@ -1,26 +1,76 @@
 import { defineStore } from "pinia";
-import { data, news } from "@/core/mocks/index";
-export const useDataStore = defineStore("dataStore", {
+import { data } from "@/core/mocks/index";
+export const useResultStore = defineStore("resultStore", {
   state: () => {
     return {
       data: [],
-      pagination: [],
+      pagination: false,
     };
   },
   actions: {
-    filter(keyword) {
+    filter(query) {
       const jsonData = data.data;
-      if (keyword.length > 2) {
-        this.autocompleteData = jsonData
-          .filter((item) => {
-            const nameSurname = item.nameSurname.toLowerCase();
-            const searchString = keyword.toLowerCase();
-            return nameSurname.indexOf(searchString) > -1;
-          })
-          .slice(0, 4);
+      if (query?.keyword) {
+        const data = jsonData.filter((item) => {
+          const nameSurname = item.nameSurname.toLowerCase();
+          const searchString = query?.keyword?.toLowerCase();
+          return nameSurname.indexOf(searchString) > -1;
+        });
+
+        this.setPagination(data, query?.page || 1);
+
+        data.sort((a, b) => {
+          return this.sortData(a, b, query?.sort);
+        });
+
+        this.data = this.getPage(data, query?.page);
       } else {
-        this.autocompleteData = [];
+        this.pagination = false;
+        this.data = [];
       }
+    },
+
+    sortData(a, b, parameter = "") {
+      let [column, order] = parameter.split("-") ?? null;
+
+      if (!column || !order || !a[column] || !b[column]) {
+        return;
+      }
+
+      let first = a[column].toString();
+      let next = b[column].toString();
+
+      if (order === "desc") {
+        return first.localeCompare(next) || null;
+      }
+
+      if (order === "asc") {
+        return next.localeCompare(first) || null;
+      }
+    },
+
+    setPagination(data, currentPage = 1) {
+      const pageItems = 4;
+      const lenght = data.length;
+      let page = parseInt(currentPage) || 1;
+      const pageCount =
+        Math.round(lenght / pageItems) == 0
+          ? 1
+          : Math.round(lenght / pageItems);
+      const nextPage = page < pageCount ? page + 1 : page;
+
+      this.pagination = {
+        prev: page > 2 ? page - 1 : 1,
+        next: nextPage,
+        data: pageCount,
+      };
+    },
+
+    getPage(data, page = 1) {
+      const lastIndex = parseInt(page) * 4 || 1;
+      const firstIndex = lastIndex - 4;
+      console.log(firstIndex, lastIndex);
+      return data.slice(firstIndex, lastIndex);
     },
   },
 });

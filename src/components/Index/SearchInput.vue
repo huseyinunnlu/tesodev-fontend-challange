@@ -17,7 +17,10 @@ watch(keyword, (value) => {
     <button
       @click="
         keyword?.length > 2 &&
-          $router.push({ name: 'results', query: { keyword: keyword } })
+          $router.push({
+            name: 'results',
+            query: { ...route.query, keyword: keyword },
+          })
       "
       :disabled="keyword?.length < 3 && true"
       class="btn"
